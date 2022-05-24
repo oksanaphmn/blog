@@ -162,7 +162,7 @@ Once configured the containers can be brought up using Docker Compose
 
     ```console
     source .env
-    docker-compose build
+    docker-compose pull
     ```
 
 2. Bring up the WordPress and Nginx containers
