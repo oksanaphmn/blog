@@ -1,0 +1,17 @@
+# environment file
+.env
+
+# wordpress files
+wordpress
+
+# mysql files
+dbdata
+
+# logging output
+logs
+
+# macOS and IDE
+.DS_Store
+.idea
+
+ssl
