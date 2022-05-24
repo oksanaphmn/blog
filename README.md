@@ -205,7 +205,6 @@ $ docker-compose rm -fv
 Going to remove wp-nginx, wp-wordpress
 [+] Running 3/0
  ⠿ Container wp-nginx      Removed                                                                                                     0.0s
- ⠿ Container wp-database   Removed                                                                                                     0.0s
 $ docker network rm wp-wordpress
 wp-wordpress
 $ rm -rf ./wordpress
@@ -229,22 +228,13 @@ Use: [https://github.com/RENCI-NRIG/ez-letsencrypt](https://github.com/RENCI-NRI
 
 ### Error establishing database connection
 
-This can happen when the `wordpress` container attempts to reach the `database` container prior to it being ready for a connection.
+This can happen when the `wordpress` container attempts to reach the `database`  prior to it being ready for a connection.
 
 This will sometimes resolve itself once the database fully spins up, but generally it's advised to start the database first and ensure it's created all of its user and wordpress tables and then start the WordPress service.
 
 ### Port Mapping
 
-Neither the **wordpress** container nor the **database** container have publicly exposed ports. They are running on the host using a docker defined network which provides the containers with access to each others ports, but not from the host.
-
 If you wish to expose the ports to the host, you'd need to alter the stanzas for each in the `docker-compose.yml` file.
-
-For the `database` stanza, add
-
-```
-    ports:
-      - "3306:3306"
-```
 
 For the `wordpress` stanza, add
 
