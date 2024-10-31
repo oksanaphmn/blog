@@ -16,7 +16,7 @@ Notes on deploying a single site [WordPress FPM Edition](https://hub.docker.com/
 - [Teardown](#teardown)
 - [References](#references)
 - [Notes](#notes)
-    - [Let's Encrypt SSL Certificate](#let's-encrypt-ssl-certificate)
+    - [Let's Encrypt SSL Certificate](#lets-encrypt-ssl-certificate)
     - [Error establishing database connection](#error-establishing-database-connection)
     - [Port Mapping](#port-mapping)
       
