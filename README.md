@@ -16,7 +16,10 @@ Notes on deploying a single site [WordPress FPM Edition](https://hub.docker.com/
 - [Teardown](#teardown)
 - [References](#references)
 - [Notes](#notes)
-
+    - [Let's Encrypt SSL Certificate](#let's-encrypt-ssl-certificate)
+    - [Error establishing database connection](#error-establishing-database-connection)
+    - [Port Mapping](#port-mapping)
+      
 ## <a name="overview"></a>Overview
 
 WordPress is a free and open source blogging tool and a content management system (CMS) based on PHP and MySQL, which runs on a web hosting service. Features include a plugin architecture and a template system.
